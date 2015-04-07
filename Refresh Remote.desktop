@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Refresh Remote
+Comment=
+Exec=/home/roboteer/refresh_remote.sh
+Icon=/home/roboteer/icon-coding-150.png
+Path=
+Terminal=true
+StartupNotify=true
