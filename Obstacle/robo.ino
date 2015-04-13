@@ -257,7 +257,7 @@ void tiltCentre()
   delay(SERVO_WAIT); // wait for servo to get there
 }
 
-void tiltCentre(int pos)
+void tiltValue(int pos)
 {
   Serial.print("Tilt Value: ");
   Serial.println(pos);

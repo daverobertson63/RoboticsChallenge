@@ -8,14 +8,6 @@ void loop()
   if ( leftObstacleSensor() == false && rightObstacleSensor() == false )
   {
     //What should I do now?
-     forward(0,255,255);
-     return;
-  }
-  
-  if ( leftObstacleSensor() == false && rightObstacleSensor() == false )
-  {
-    //What should I do now?
-     leftSpin(1000,255);
      return;
   }
      

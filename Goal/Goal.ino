@@ -12,24 +12,37 @@ void loop()
   
   pointLeft();
   leftDistance = Ultrasonic();
-  
-  if ( leftDistance < midDistance && midDistance < rightDistance ) 
+    
+  if ( leftDistance <= midDistance && leftDistance <= rightDistance ) 
   {
     //Shoot!
+
   }
   
 
-
   //Celebrate the goal!
+  stupidCelebration(); 
+  
+  //Have a rest
+  halt(5000);
+    
+}
+
+
+void stupidCelebration()
+{
+  halt(1000);
   leftSpin(2000,255);
+  forward(200,255);
+  reverse(200,255);
+  forward(200,255);
+  reverse(200,255);
+  forward(200,255);
+  reverse(200,255);
   tiltUp();
   tiltDown();
   tiltUp();
   tiltDown();
   tiltCentre();
-  rightSpin(2000,255);
-  
-  //Have a rest
-  halt(50000);
-    
+  rightSpin(2000,255);  
 }
