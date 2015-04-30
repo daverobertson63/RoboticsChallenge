@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Robotics Refresh
+Comment=
+Exec=/home/roboteer/brc.sh
+Icon=/home/roboteer/RoboticsChallenge/icon.png
+Path=
+Terminal=true
+StartupNotify=true
