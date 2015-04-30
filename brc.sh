@@ -105,6 +105,9 @@ echo "Copying all folders to sketches"
 mkdir sketches
 find RoboticsChallenge   -maxdepth 1 -mindepth 1 -type d -exec cp -r {} sketches \;
 rm -rf sketches/.git
+rm -rf Demos
+rm -rf Projects
+rm -rf Testing
 
 # Copy the latest script down to replace this one running
 cp "RoboticsChallenge/BRC Refresh.desktop" ~/Desktop
