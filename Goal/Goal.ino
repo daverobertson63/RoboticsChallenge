@@ -18,7 +18,8 @@ void loop()
     //Shoot!
 
   }
-  
+
+  halt(1000);
 
   //Celebrate the goal!
   stupidCelebration(); 
@@ -28,21 +29,53 @@ void loop()
     
 }
 
-
+//Demonstrate using functions
 void stupidCelebration()
 {
-  halt(1000);
-  leftSpin(2000,255);
-  forward(200,255);
-  reverse(200,255);
-  forward(200,255);
-  reverse(200,255);
-  forward(200,255);
-  reverse(200,255);
-  tiltUp();
-  tiltDown();
+  jiggleBot(3);
+  wiggleBot(4);
+  noddingBot(5);
+}
+
+//Demonstrate for iteration
+void jiggleBot (int repeats)
+{
+  for (int i=0; i<repeats; i++)
+  {
+    forward(200, 255, 255);
+    reverse(200, 255, 255);
+  }
+}
+
+//Demonstrate while iteration
+void wiggleBot (int repeats)
+{
+  int i = 0;
+  
+  while (i < repeats)
+  {
+    leftSpin(200, 255);
+    rightSpin(400, 255);
+    leftSpin(200,255);
+    
+    i++;
+  }
+}
+  
+//Demonstrate recursion
+int noddingBot (int repeats)
+{
   tiltUp();
   tiltDown();
   tiltCentre();
-  rightSpin(2000,255);  
+  
+  if (repeats < 1)
+  {
+    return 0;
+  }
+  
+  return noddingBot(repeats - 1);
 }
+
+
+
