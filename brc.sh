@@ -97,15 +97,17 @@ rm -rf dhrobertson.com
 rm -f refresh_remote.sh*
 rm -f refresh_local.sh*
 
-echo "Upgrading brc.sh - this will only work next tim you run"
-cp RoboticsChallenge/brc.sh . 
-chmod +x brc.sh
 
 echo "Copying all folders to sketches"
-find -type d -links 2 -exec mkdir -p "sketches/{}" \;
+mkdir sketches
+find RoboticsChallenge   -maxdepth 1 -mindepth 1 -type d -exec cp -r {} sketches \;
+rm -rf sketches/.git
 
 # Copy the latest script down to replace this one running
-cp "RoboticsChallenge/BRC Refresh.desktop" Desktop
+cp "RoboticsChallenge/BRC Refresh.desktop" ~/Desktop
 
 
 echo "Fully Installed - restart Arduino or Processing to test"
+echo "Upgrading brc.sh - this will only work next time you run"
+cp RoboticsChallenge/brc.sh . 
+chmod +x brc.sh
