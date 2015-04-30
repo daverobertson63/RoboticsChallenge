@@ -96,6 +96,7 @@ rm -rf sketches.zip
 rm -rf dhrobertson.com
 rm -f refresh_remote.sh*
 rm -f refresh_local.sh*
+rm -rf Desktop/Re*.desktop
 
 
 echo "Copying all folders to sketches"
