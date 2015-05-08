@@ -54,7 +54,7 @@ if [ $localRefresh == false ]; then
 	echo "You must be connected to the Internet to refresh the sketches folder"
 	echo "Checking to see if you are...."
 
-	sudo apt-get -y install git
+	command -v git >/dev/null 2>&1 || { sudo apt-get -y install git; }
 
 	echo "Platform type: " $(uname)
 	if [ "$(uname)" == "Darwin" ]; then

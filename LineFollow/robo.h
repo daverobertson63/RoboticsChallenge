@@ -19,7 +19,7 @@
 #define L4 8 //Motor L4
 
 // If the line follower code needs reversing then set this (new sensors are reversed!)
-//#define REVERSE_LF true
+#define REVERSE_LF true
 #ifdef REVERSE_LF
   #define BLACK 1
   #define WHITE 0
