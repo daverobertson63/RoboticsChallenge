@@ -1,4 +1,4 @@
-##!/bin/bash
+#!/bin/bash
 #
 # This is the main start download script for the Barclays Robotics Challenge build
 # Can be used on any Ubuntu based build - with Arduino and Processing already installed
