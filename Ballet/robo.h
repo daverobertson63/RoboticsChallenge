@@ -14,12 +14,12 @@
 #define TILT_PIN 10 //Tilt
 
 #define L1 6 //Motor L1
-#define L2 5 //Motor L2
-#define L3 12 //Motor L3
+#define L2 12 //Motor L2
+#define L3 5 //Motor L3
 #define L4 8 //Motor L4
 
 // If the line follower code needs reversing then set this (new sensors are reversed!)
-//#define REVERSE_LF true
+#define REVERSE_LF true
 #ifdef REVERSE_LF
   #define BLACK 1
   #define WHITE 0
