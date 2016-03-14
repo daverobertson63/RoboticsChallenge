@@ -1,0 +1,12 @@
+<h1>MicroBit Robot Interface Board</h1>
+<h2>Rev B 14/03/2016</h2>
+MicroBit robot interface board for the Barclays Computing Science Education programme (https://barclaysapps.wordpress.com/)<p>
+The MicroBit_Custom & SparkFun libraries are required.<p>
+Updated for first production Micro:Bit release (with Button A on Pin 5).<br>
+See https://www.microbit.co.uk/device/pins<p>
+Submitted to fab 14/03/2016<p>
+<b>Changes - Rev B</b><br>
+Updated MicroBit custom library to v0.2<br>
+Move Button A from pin 4 to pin 5<br>
+Swap over P1 and P8 on L3 and L4<br>
+Relocate the enable switch to the edge of the board.
