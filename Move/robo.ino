@@ -36,6 +36,9 @@ void setup()
   Serial.begin(115200);  // Start the Serial and make sure the debug says 115200 
   Serial.println("Starting Barclays Robot");
   
+  tiltCentre();
+  pointCentre();
+  
   //while(1)  // Use this to repeat forever
   // testAll();
 
